@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(67, 67, 173, 0.76);
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.completed {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.527);
+}
+.TodoWrapper{
+  background-color: rgba(25, 31, 85, 0.966);
+  margin: auto;
+  width: 50%;
+  margin-top: 5%;
+  border-radius: 7px;
+}
+
+h1{
+  font-size: 30px;
+  padding-top: 4%;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.mainInput{
+  width: 50%;
+  height: 25px;
+  width: 60%;
+  padding: 5px 10px;
+  font-size: 1rem; 
+  background-color: transparent;
+  outline: none;
+  border:2px solid rgba(57, 57, 124, 0.938);
+  color: white;
+}
+.addBtn{
+  padding: 7px 10px;
+  height: 37px;
+  font-size: 15px;
+  background-color: rgb(128, 101, 202);
+  color: white;
+  border: 1px;
+  cursor: pointer;
+}
+
+
+
+.task{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(128, 101, 202);
+  margin-bottom: 1em;
+  margin-left: 12%;
+  margin-right: 12%;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+
+}
+
+.deleteBtn{
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}.deleteBtn:hover{
+  background-color: rgb(136, 38, 38);
+  color: white;
+  transition: background-color 0.5s ease;
+  border-radius: 40%;
+  cursor:pointer;
+}
+
+
+.updateBtn{
+  font-size: 15px;
+  padding: 5px 10px;
+  outline: none;
+}.updateBtn:hover{
+  background-color: rgb(67, 67, 170);
+  color: white;
+  transition: background-color 0.5s ease;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.Todo{
+  padding-bottom: 20px;
 }
